@@ -9,7 +9,7 @@ public class NovelInfoDAO {
 	private String className = "com.mysql.cj.jdbc.Driver";
 	private String username = "root";
 	private String password = "123456";
-	private String url = "jdbc:mysql://localhost:3306/novels";
+	private String url = "jdbc:mysql://localhost:3306/novels?serverTimezone=GMT";
 	private Connection conn;
 
 	private Connection getConn() {
