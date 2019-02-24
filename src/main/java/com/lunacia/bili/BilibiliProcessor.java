@@ -29,6 +29,7 @@ public class BilibiliProcessor implements PageProcessor {
 	private String JsonUrl = "https://api.bilibili.com/x/web-interface/archive/stat?aid=";
 
 	public void process (Page page) {
+
 		CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 		HttpGet httpGet = new HttpGet(JsonUrl + av);
 		JsonObject json = null;
